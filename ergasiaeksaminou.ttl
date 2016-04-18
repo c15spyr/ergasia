@@ -1,0 +1,35 @@
+@prefix as: <http://dilab77.ionio.gr/swp/spyrou/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://api.talis.com/stores/space/items/tutorial/spared.html/> .
+
+
+as:Didaskwn rdf:type rdfs:Class .
+as:Dialeksi rdf:type rdfs:Class .
+as:Aithousa rdf:type rdfs:Class .
+as:Mathima rdf:type rdfs:Class .
+as:Didaskwn rdfs:subClassOf foaf:Person .
+
+
+as:didasketaiapo  rdf:type rdf:Property . 
+as:didasketaiapo  rdfs:domain  rdfs:Dialeksi .            
+as:didasketaiapo rdfs:range rdfs:Didaskwn .  
+as:didasketaistin rdf:type rdf:Property .  
+as:didasketaistin rdfs:domain rdfs:Dialeksi .
+as:didasketaiston rdfs:range rdfs:Aithousa .
+as:didasketaito rdf:type rdf:Property .
+as:didasketaito rdfs:domain rdfs:Dialeksi .
+as:didasketaito rdfs:range rdfs:Mathima .
+as:imera rdf:type rdf:Property .
+as:imera rdfs:domain rdfs:Dialeksi .
+as:imera rdfs:range  xsd:date .  
+as:wraenarksis rdf:type rdf:Property .
+as:wraenarksis rdfs:domain rdfs:Dialeksi .
+as:wraenarksis rdfs:range xsd:time . 
+as:wraliksis rdf:type rdf:Property .
+as:wraliksis rdfs:domain rdfs:Dialeksi . 
+as:wraliksis rdfs:range rdfs:time .
+as:eksamino rdf:type rdf:Property .
+as:eksamino rdfs:domain rdfs:Dialeksi .
+as:eksamino rdfs:range rdfs:Literal .
